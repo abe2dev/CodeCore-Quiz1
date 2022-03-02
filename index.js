@@ -21,8 +21,8 @@ app.use('/user',userRouter);
 const cluckRouter = require('./routes/cluck')
 app.use('/',cluckRouter);
 
-const ADDRESS = 'localhost';
+const DOMAIN = 'localhost';
 const PORT = 3000;
-app.listen(PORT, ADDRESS, () => {
-  console.log(`Server listening on ${ADDRESS}:${PORT}`);
+app.listen(PORT, DOMAIN, () => {
+  console.log(`Server listening on ${DOMAIN}:${PORT}`);
 });
